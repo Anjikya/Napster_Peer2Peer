@@ -2,7 +2,7 @@ import java.net.*;
 import java.io.*;
 import java.util.*;
 
-public class Client {
+public class Client {							//Clent_side
 	public static void main(String args[]) {
 		int id;
 		int c = 1;
