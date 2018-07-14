@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.*;
 import java.net.*;
 
-public class ClientServer extends Thread {
+public class ClientServer implements Runnable {
 String FileDirectory;
 int port_no;
 ServerSocket serverSocket=null;
