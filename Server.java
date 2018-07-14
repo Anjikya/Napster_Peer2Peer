@@ -29,7 +29,7 @@ public class Server {										//Thread class to handle multiple clients
 	}
 }
 
-class EchoThread extends Thread {
+class EchoThread implements Runnable {
 	protected Socket server;
 
 	int count = 0;
