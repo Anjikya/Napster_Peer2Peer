@@ -70,7 +70,7 @@ public class Client {							//Clent_side
 					peer=scan.nextInt();
 					System.out.println("Enter the the peers respective port no. at which it will act as server");
 					portofserver=scan.nextInt();
-					//ClientasServer(peer,portofserver,d.filename,sharedDir); 												//Downloading the file from Peer						
+					ClientasServer(peer,portofserver,d.filename,sharedDir); 												//Downloading the file from Peer						
 					System.out.println("Downloaded file "+d.filename+"from peer_id: "+peer+"at port no"+portofserver);
 
 					client.close();
