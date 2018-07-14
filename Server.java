@@ -6,7 +6,6 @@ public class Server {										//Thread class to handle multiple clients
 	public static void main(String args[]) {
 		ServerSocket serverSocket = null;
 		Socket socket = null;
-		//int port = Integer.parseInt(args[0]);
 		int port=5002;
 		ArrayList<FileProperties> filess=new ArrayList<FileProperties>(); 
 
@@ -36,13 +35,12 @@ class EchoThread implements Runnable {
 	int value = 1;
 	ArrayList<FileProperties> filess=new ArrayList<FileProperties>();       //ArrayList that maps to FileProperties class to store registered files of clients 
 
-	//String[][] reg = new String[10][10];
 	int[] files_per_peer = new int[20];
 	Data d = new Data();
 	Peer p = new Peer();
 
 	public EchoThread(Socket server,ArrayList<FileProperties> filess) 
- {
+ 	{
 		this.server = server;
 		this.filess=filess;
 		
